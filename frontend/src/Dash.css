@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+
+.dashboard {
+  position: fixed;
+  top: 0px;
+  left: 80px;
+  margin-left: 40px;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: 1000px 720px;
+  grid-template-rows: 300px 600px;
+  grid-template-areas: 
+            "dashboard-container" "to-do-container"
+            "dashboard-container" "to-do-container";
+}
+
+
+.header{
+  height: 45px;
+  font-family: "Karla", sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #333;
+}
+
+.dashboard-container {
+  height: 900px;
+  width: 1000px;
+}
+
+.courses-container{
+}
+
+.courses{
+  display: grid;
+  grid-template-columns: 210px 210px 210px;
+  grid-column-gap: 40px;
+}
+
+.course {
+  width: 210px;
+  height: 213px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.course p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  padding: 36px 0;
+}
+
+.course-margin{
+  width: 210px;
+  height: 213px;
+  margin: 20px;
+}
+
+.course:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.285);
+}
+
+.course-logo{
+  width: 210px;
+  height: 117px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.to-do-container{
+  height: 900px;
+  width: 720px;
+  overflow-y: auto;
+}
+
+.assignment {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 4px;
+}
+
+.assignment p{
+  font-family: "Karla", sans-serif;
+  font-weight: 500;
+}
+
+.assignment-name {
+  font-size: 1.4em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 80%;
+}
+
+.assignment-grade {
+  text-align: right;
+  font-size: 1em;
+  width: 20%;
+}
+
+.assignment-type {
+  font-size: 1em;
+  width: 50%;
+}
+
+.assignment-due-date {
+  font-size: 1em;
+  width: 50%;
+  text-align: right;
+}
+
+.assignment:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.285);
+}
+
+.assignment-margin{
+  margin: 20px 20px 20px 0px;
+}
+
+.line-dashboard {
+  width: 950px;
+  height: 2px;
+  background-color: #00000050;
+}
+
+.line-to-do {
+  width: 684px;
+  height: 2px;
+  background-color: #00000050;
+}

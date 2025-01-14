@@ -1,0 +1,88 @@
+.course-page{
+    position: fixed;
+    top: 0px;
+    left: 80px;
+    margin-left: 40px;
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1000px 720px;
+    grid-template-rows: 900px;
+    grid-template-areas: 
+            "course-sub-page" "course-change-container";
+}
+
+.course-sub-page{
+    width: 1000px;
+    height: 900px;
+}
+
+.course-header{
+    height: 45px;
+    font-family: "Karla", sans-serif;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #333;
+    
+}
+
+.course-change-header{
+    text-align: center;
+}
+
+.course-change-container{
+    height: 900px;
+    width: 400px;
+}
+
+.course-change-option{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.course-change-option p{
+    margin: auto;
+    text-align: center;
+}
+
+
+.course-change-line{
+    width: 400px;
+    height: 2px;
+    background-color: #00000050;
+}
+
+.course-container{
+    display: flex;
+    height: 855px;
+}
+
+.course-options{
+    margin-top: 20px;
+    width: 200px;
+}
+
+.course-option{
+    margin-top: 20px;
+    padding-left: 5px;
+    border: none;
+}
+
+.course-option:hover{
+    border-left: 1px solid #007bff; 
+}
+
+.assignment-list{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-left: 20px;
+    width: 680px;
+    overflow-y: auto;
+}
+
+.assignment-list h2{
+    font-size: 2.5em;
+    margin-right: 20px;
+    text-align: center;
+    overflow-y: auto;
+}

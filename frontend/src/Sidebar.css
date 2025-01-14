@@ -1,0 +1,199 @@
+/* comment for a change */
+
+.sidebar {
+  z-index: 9999;
+  width: 80px;
+  background-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logowhite img {
+  width: 60px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.nav {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+}
+
+.nav button{
+  outline: none;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav button:focus{
+  outline: none;
+  border: none;
+}
+
+.nav:hover{
+  border-color: transparent;
+  background-color: white;
+}
+
+.nav:hover .nav-elements{
+  border-color: transparent;
+  color: #007bff;
+}
+
+.nav-dropdown:hover {
+  background-color: white;
+  border-color: transparent;
+  color: #007bff;
+}
+
+.nav-dropdown:hover .nav-courses{
+  background-color: white;
+  border-color: transparent;
+  color: #007bff;
+}
+
+.nav-exit{
+  width: 80px;
+  background-color: transparent;
+  position: fixed;
+  bottom: 0;
+}
+
+.nav-exit button{
+  outline: none;
+  border: none;
+  border-color: transparent;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-exit button:focus{
+  outline: none;
+  border: none;
+}
+
+.nav-exit:hover{
+  border-color: transparent;
+  background-color: white;
+}
+
+.nav-exit:hover .nav-elements{
+  border-color: transparent;
+  color: #007bff;
+}
+
+#dropdown-button-drop-end{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  user-select: none;
+  width: 80px;
+}
+
+#dropdown-button-drop-end:hover{
+  border-color: transparent;
+  background-color: white;
+  color: #007bff;
+}
+
+#dropdown-button-drop-end::after {
+  display: none;
+}
+
+.nav-elements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+}
+
+.nav-courses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  font-size: 0.9em;
+  color: white;
+  text-align: center;
+}
+
+.nav-dropdown{
+  width: 80px;
+  height: 80px;
+  padding-top: 14.203px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-dropdown .dropdown-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-dropdown .dropdown-toggle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar nav ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  color: white;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.sidebar nav ul li span {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.sidebar nav ul li:hover {
+  color: #000275;
+}
+
+.sidebar nav ul li.exit {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+}
+
+.sidebar nav ul li.exit:hover {
+  color: #000275;
+}

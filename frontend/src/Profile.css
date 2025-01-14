@@ -1,0 +1,52 @@
+.profile-page{
+    position: fixed;
+    top: 0px;
+    left: 80px;
+    margin-left: 40px;
+    margin-top: 16px;
+}
+/* comment for a change */
+.profile-container{
+  height: 300px;
+  width: 720px;
+}
+
+.profile-header{
+  height: 45px;
+  font-family: "Karla", sans-serif;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #333;
+}
+
+.profile-info{
+  height: 255px;
+  display: grid;
+  grid-template-columns: 255px 465px;
+  grid-template-areas: 
+            "profile-picture" "profile-account";
+}
+
+.profile-picture{
+  height: 255px;
+  width: 255px;
+}
+
+.profile-picture img{
+  margin: auto;
+  padding: 42.5px 0;
+  width: 170px;
+}
+
+.profile-account{
+  padding: 91.5px 0;
+  height: 255px;
+  width: 465px;
+}
+
+.profile-account p{
+  font-size: 1em;
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  color: #333;
+}
